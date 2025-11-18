@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Looks from "./components/Looks";
 import Lancamentos from "./components/Lancamentos";
 
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Looks />
       <Lancamentos />
     </>
   );
