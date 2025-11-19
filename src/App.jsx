@@ -5,7 +5,6 @@ import Lancamentos from "./components/Lancamentos";
 import OutrosTons from "./components/OutrosTons";
 import Novidades from "./components/Novidades";
 import Footer from "./components/Footer";
-import "./Global.scss";
 
 function App() {
   return (

@@ -7,9 +7,9 @@ function Header() {
       <img src={logo} alt="logo" />
 
       <ul>
-        <li>LOOKS</li>
-        <li>LANÇAMENTOS</li>
-        <li>NOVIDADES</li>
+        <li className="links">LOOKS</li>
+        <li className="links">LANÇAMENTOS</li>
+        <li className="links">NOVIDADES</li>
       </ul>
     </header>
   );

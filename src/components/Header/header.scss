@@ -1,14 +1,27 @@
+@use "../../Global.scss" as *;
+
 header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  font-family: $poppins;
+
+  img {
+    width: 12rem;
+    margin: 1.75rem 0rem 2.8rem 1.25rem;
+  }
 
   ul {
     display: flex;
+    gap: 1.8rem;
+    margin-right: 3.75rem;
   }
 
   li {
-    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
+
+
 }
