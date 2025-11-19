@@ -1,29 +1,38 @@
-import "./lancamentos.scss";
+import "./outrosTons.scss";
 import { useState } from "react";
 
 // Import das imagens
-import gloss1 from "../../assets/gloss1.png";
-import gloss2 from "../../assets/gloss2.png";
-import batom3 from "../../assets/batom3.png";
-import vermelho from "../../assets/vermelho.png";
-import azul from "../../assets/azul.png";
-import marrom from "../../assets/marrom.png";
-import nude from "../../assets/nude.png";
+import btmVermelho from "../../assets/batom-vermelho.png";
+import btmMarrom from "../../assets/batom-marrom.png";
+import btmRosa from "../../assets/batom-rosa.png";
+import btmLilas from "../../assets/batom-lilas.png";
 import stars from "../../assets/stars.png";
 
 function Lancamentos() {
   // Estado que guarda a cor (imagem) atual
   // O valor inicial é a imagem "vermelho"
-  const [cor, setCor] = useState(marrom);
+  const [cor, setCor] = useState(btmRosa);
 
   return (
     <section className="lancamentos">
-      <h2>APROVEITE OS LANÇAMENTOS</h2>
+      <h2>OUTROS TONS DE BATOM</h2>
 
       <figure class="produtos">
-        <img src={gloss1} alt="2 Batons Liquido" />
-        <img src={gloss2} alt="3 Batons Liquido" />
-        <img src={batom3} alt="3 Batons" />
+        <button onClick={() => setCor(btmVermelho)}>
+        <img src={btmVermelho} alt="Batom Vermelho" />
+        </button>
+
+        <button onClick={() => setCor(btmLilas)}>
+        <img src={btmLilas} alt="Batom Lilás" />
+        </button>
+
+        <button onClick={() => setCor(btmRosa)}>
+        <img src={btmRosa} alt="Batom Rosa" />
+        </button>
+
+        <button onClick={() => setCor(btmMarrom)}>
+        <img src={btmMarrom} alt="Batom Marrom" />
+        </button>
       </figure>
 
       <figure class="produto-destaque">
@@ -37,10 +46,10 @@ function Lancamentos() {
         <p>Cores disponíveis</p>
 
         {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
-        <button onClick={() => setCor(marrom)}>Marrom</button>
-        <button onClick={() => setCor(vermelho)}>Vermelho</button>
-        <button onClick={() => setCor(nude)}>Nude</button>
-        <button onClick={() => setCor(azul)}>Azul</button>
+        <button onClick={() => setCor(btmRosa)}>Rosa</button>
+        <button onClick={() => setCor(btmVermelho)}>Vermelho</button>
+        <button onClick={() => setCor(btmLilas)}>Lilás</button>
+        <button onClick={() => setCor(btmMarrom)}>Marrom</button>
 
         <h4>Descrição</h4>
         <p>
