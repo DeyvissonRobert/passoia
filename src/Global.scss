@@ -1,6 +1,6 @@
 //Variáveis globais e estilos base
-$text-color: #333;
-$a-color-footer: #2D2D2D;
+$text-color: #000;
+$text-color-2: #2D2D2D;
 $color-hover: #B20134;
 $cor-fundo: #fff;
 
@@ -17,18 +17,37 @@ $roboto: 'Roboto', sans-serif;
 
 body {
   background-color: $cor-fundo;
-  max-width: 2200px;
+  max-width: 2000px;
   margin: auto;
 }
 
 .links {
-    cursor: pointer;
-    transition: color 0.3s ease;
-    
-    &:hover {
-        color: $color-hover;
-        text-decoration: overline underline 2px;
-    }
+  cursor: grab;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-hover;
+    text-decoration: overline underline 2px;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
 }
 
+h1,
+h2 {
+  font-family: $roboto;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 2.5rem;
+  color: $text-color-2;
+}
 
+@media (max-width: 768px) {
+
+  h1,
+  h2 {
+    font-size: 1.25rem;
+  }
+}
