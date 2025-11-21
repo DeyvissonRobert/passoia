@@ -3,7 +3,7 @@ import make from "../../assets/make.png";
   
 function Novidades() {
   return (
-    <section>
+    <section class="novidades">
       <h2>NOVIDADES PARA VOCÊ</h2>
       <img src={make} alt="Maquiagens" />
     </section>

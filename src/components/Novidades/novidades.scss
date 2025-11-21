@@ -1,0 +1,17 @@
+@use "../../Global.scss" as *;
+
+.novidades {
+    border-bottom: 2px solid rgb(241, 241, 241) ;
+    position: relative;
+    box-shadow: 0 4px 6px -4px rgba(120, 120, 120, 0.35);
+
+    h2 {
+        margin: 3rem 0;
+    }
+
+    img {
+        margin: auto;
+        width: 95%;
+        margin-bottom: 4rem;
+    }
+}
