@@ -1,0 +1,112 @@
+@use "../../Global.scss" as *;
+
+.lancamentos {
+    font-family: $roboto;
+
+    h2 {
+        margin: 3rem 0;
+    }
+
+    .lancamentos-div {
+        display: flex;
+        padding: 0 5%;
+        justify-content: center;
+        margin-bottom: 4.8rem;
+
+        .produtos {
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+
+            img {
+                height: 30%;
+            }
+        }
+
+        .produto-detalhes {
+            display: flex;
+            align-items: center;
+            margin-left: 2.3rem;
+            gap: 4.6rem;
+
+            .produto-destaque {
+                img {
+                    width: 29rem;
+                }
+            }
+
+            .card {
+                width: 29rem;
+                height: 100%;
+                padding: 1rem;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+                img {
+                    width: 6.8rem;
+                }
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    color: $text-color-2;
+                }
+
+                #subtitulo {
+                    font-weight: 400;
+                    font-size: 0.6rem;
+                    margin: 0.5rem 0 0.7rem;
+                }
+
+                button {
+                    width: 3.75rem;
+                    height: 3.75rem;
+                    border-radius: 50%;
+                    margin: 0 1rem 1rem 0;
+                    cursor: grab;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: transform 0.5s ease;   
+                        border: 2px solid #fff;
+                        box-shadow: 0 0 0 4px $color-hover;
+                    }
+
+                    &:active {
+                        cursor: grabbing;
+                    }
+                }
+
+                #cor1 {
+                    background-color: #73282D;
+                }
+
+                #cor2 {
+                    background-color: #E1342A;
+                }
+
+                #cor3 {
+                    background-color:  #B1B0D8;
+                }
+
+                #cor4 {
+                    background-color: #DE755E;
+                }
+
+
+                h4 {
+                    margin: 0.4rem 0 0.8rem 0;
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-weight: 400;
+                    color: $text-color-2;
+                }
+            }
+
+        }
+
+    }
+
+}

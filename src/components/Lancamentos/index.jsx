@@ -17,41 +17,44 @@ function Lancamentos() {
   const [cor, setCor] = useState(marrom);
 
   return (
-    <section className="lancamentos">
+    <section class="lancamentos">
       <h2>APROVEITE OS LANÇAMENTOS</h2>
+      <div class="lancamentos-div">
+        <figure class="produtos">
+          <img src={gloss1} alt="2 Batons Liquido" />
+          <img src={gloss2} alt="3 Batons Liquido" />
+          <img src={batom3} alt="3 Batons" />
+        </figure>
 
-      <figure class="produtos">
-        <img src={gloss1} alt="2 Batons Liquido" />
-        <img src={gloss2} alt="3 Batons Liquido" />
-        <img src={batom3} alt="3 Batons" />
-      </figure>
+        <div class="produto-detalhes">
+          <figure class="produto-destaque">
+            {/* A imagem exibida será sempre a do estado "cor" */}
+            <img src={cor} alt="Mulher mostrando Batom" />
+          </figure>
 
-      <figure class="produto-destaque">
-      {/* A imagem exibida será sempre a do estado "cor" */}
-      <img src={cor} alt="Mulher mostrando Batom" />
-      </figure>
+          <div class="card">
+            <img src={stars} alt="5 Estrelas" />
+            <h3>Matte Premium</h3>
+            <p id="subtitulo">Cores disponíveis</p>
 
-      <div class="card">
-        <img src={stars} alt="5 Estrelas" />
-        <h3>Matte Premium</h3>
-        <p>Cores disponíveis</p>
+            {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
+            <button id="cor1" onClick={() => setCor(marrom)}>ㅤ</button>
+            <button id="cor2" onClick={() => setCor(vermelho)}>ㅤ</button>
+            <button id="cor3" onClick={() => setCor(azul)}>ㅤ</button>
+            <button id="cor4" onClick={() => setCor(nude)}>ㅤ</button>
 
-        {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
-        <button onClick={() => setCor(marrom)}>Marrom</button>
-        <button onClick={() => setCor(vermelho)}>Vermelho</button>
-        <button onClick={() => setCor(nude)}>Nude</button>
-        <button onClick={() => setCor(azul)}>Azul</button>
-
-        <h4>Descrição</h4>
-        <p>
-          O Batom Matte possui uma fórmula inovadora desenvolvida para entregar
-          o máximo de cor na primeira aplicação com um deslize suave e macio.
-          Tem acabamento matte aveludado e manteiga de manga que ajuda a
-          hidratar e a proteger os lábios contra ressecamento. Ajuda na
-          hidratação dos lábios, textura fina e macia que não pesa nos lábios.
-        </p>
+            <h4>Descrição</h4>
+            <p>
+              O Batom Matte possui uma fórmula inovadora desenvolvida para
+              entregar o máximo de cor na primeira aplicação com um deslize
+              suave e macio. Tem acabamento matte aveludado e manteiga de manga
+              que ajuda a hidratar e a proteger os lábios contra ressecamento.
+              Ajuda na hidratação dos lábios, textura fina e macia que não pesa
+              nos lábios.
+            </p>
+          </div>
+        </div>
       </div>
-
     </section>
   );
 }
