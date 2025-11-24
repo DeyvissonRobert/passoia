@@ -38,10 +38,12 @@ function Lancamentos() {
             <p id="subtitulo">Cores disponíveis</p>
 
             {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
+            <div class="botoes-cores">
             <button id="cor1" onClick={() => setCor(marrom)}>ㅤ</button>
             <button id="cor2" onClick={() => setCor(vermelho)}>ㅤ</button>
             <button id="cor3" onClick={() => setCor(azul)}>ㅤ</button>
             <button id="cor4" onClick={() => setCor(nude)}>ㅤ</button>
+            </div>
 
             <h4>Descrição</h4>
             <p>

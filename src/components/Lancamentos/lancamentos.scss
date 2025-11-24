@@ -63,16 +63,19 @@
                     border-radius: 50%;
                     margin: 0 1rem 1rem 0;
                     cursor: grab;
+                    border: 2px solid #fff;
+                    box-shadow: 0 0 0 2px #D8D8D8;
 
                     &:hover {
                         transform: scale(1.1);
                         transition: transform 0.5s ease;   
                         border: 2px solid #fff;
-                        box-shadow: 0 0 0 4px $color-hover;
+                        box-shadow: 0 0 0 3px $color-hover;
                     }
 
                     &:active {
                         cursor: grabbing;
+                        transform: scale(1);
                     }
                 }
 
@@ -109,4 +112,77 @@
 
     }
 
+}
+
+@media (max-width: 768px) {
+    .lancamentos {
+        h2  {
+            margin: 2rem 0 0.5rem;
+        }
+        
+        .lancamentos-div {
+            margin-bottom: 1.5rem;
+
+         .produtos {
+             display: none;
+             }
+
+            .produto-detalhes {
+                flex-direction: column;
+                margin-left: 0;
+                gap: 0.5rem;
+
+                .produto-destaque {
+                    img {
+                        width: 10rem;
+                    }
+                }
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0.8rem;
+
+
+                    img {
+                        width: 6rem;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    .botoes-cores {
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    button {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border: 1px solid #fff;
+                        box-shadow: 0 0 0 2px #D8D8D8;
+
+                    &:hover {
+                        box-shadow: 0 0 0 2px $color-hover;
+                    }
+                    }
+
+                    #cor4 {
+                        margin-right: 0;
+                    }
+
+                    h4 {
+                        font-size: 0.95rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
 }

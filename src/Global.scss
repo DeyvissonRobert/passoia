@@ -3,7 +3,7 @@ $text-color: #000;
 $text-color-2: #2D2D2D;
 $color-hover: rgba(240, 46, 170, 0.7);
 // $color-hover: #B20134;
-$cor-fundo: #fff;
+$cor-fundo: #ffffff;
 
 $poppins: 'Poppins', sans-serif;
 $roboto: 'Roboto', sans-serif;
@@ -29,10 +29,14 @@ body {
   &:hover {
     color: $color-hover;
     text-decoration: overline underline 2px;
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
   }
 
   &:active {
     cursor: grabbing;
+    transform: scale(0.98);
+
   }
 }
 
