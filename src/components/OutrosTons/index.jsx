@@ -8,16 +8,16 @@ import btmRosa from "../../assets/batom-rosa.png";
 import btmLilas from "../../assets/batom-lilas.png";
 import stars from "../../assets/stars.png";
 
-function Lancamentos() {
+function OutrosTons() {
   // Estado que guarda a cor (imagem) atual
   // O valor inicial é a imagem "vermelho"
   const [cor, setCor] = useState(btmRosa);
 
   return (
-    <section className="lancamentos">
+    <section className="outros-tons">
       <h2>OUTROS TONS DE BATOM</h2>
 
-      <figure class="produtos">
+      <figure className="outros-produtos">
         <button onClick={() => setCor(btmVermelho)}>
         <img src={btmVermelho} alt="Batom Vermelho" />
         </button>
@@ -35,12 +35,12 @@ function Lancamentos() {
         </button>
       </figure>
 
-      <figure class="produto-destaque">
+      <figure className="destaque-batom">
       {/* A imagem exibida será sempre a do estado "cor" */}
       <img src={cor} alt="Mulher mostrando Batom" />
       </figure>
 
-      <div class="card">
+      <div className="card-batom">
         <img src={stars} alt="5 Estrelas" />
         <h3>Matte Premium</h3>
         <p>Cores disponíveis</p>
@@ -61,8 +61,9 @@ function Lancamentos() {
         </p>
       </div>
 
+
     </section>
   );
 }
 
-export default Lancamentos;
+export default OutrosTons;

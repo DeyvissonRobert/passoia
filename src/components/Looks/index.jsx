@@ -6,7 +6,7 @@ import tendencia from "../../assets/tendencia.png";
 
 function Looks() {
   return (
-    <section class="looks">
+    <section id="looks">
       <h1>LOOKS E DICAS DE MAQUIAGEM</h1>
       <article>
         <img src={labios} alt="Mulher passando gloss" />

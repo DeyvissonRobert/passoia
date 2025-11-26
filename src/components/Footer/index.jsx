@@ -20,7 +20,7 @@ function Footer() {
         <a href="">Nossas Lojas</a>
       </nav>
 
-      <div class="payment-methods">
+      <div className="payment-methods">
         <h3>FORMAS DE PAGAMENTO</h3>
       <img src={mastercard} alt="Mastercard logo" />
       <img src={visa} alt="Visa logo" />
@@ -28,7 +28,7 @@ function Footer() {
       <img src={boleto} alt="Boleto logo" />
       </div>
 
-      <div class="payment-methods">
+      <div className="payment-methods">
         <h3>SIGA-NOS NAS REDES SOCIAIS</h3>
       <img src={instagram} alt="Instagram logo" />
       <img src={facebook} alt="Facebook logo" />

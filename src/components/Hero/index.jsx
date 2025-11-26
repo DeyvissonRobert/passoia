@@ -3,7 +3,7 @@ import bannerHero from "../../assets/banner.png";
 
 function Hero() {
   return (
-    <section class="hero">
+    <section className="hero">
       <img src={bannerHero} alt="Banner da Revitalift" />
     </section>
   );

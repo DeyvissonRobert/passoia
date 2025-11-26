@@ -1,4 +1,12 @@
-.produtos {
+@use "../../Global.scss" as *;
+
+
+.outros-tons {
+    font-family: $roboto;
+
+    .outros-produtos {
   display: flex;
   // flex-direction: column;
+}
+
 }

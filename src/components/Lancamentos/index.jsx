@@ -17,22 +17,22 @@ function Lancamentos() {
   const [cor, setCor] = useState(marrom);
 
   return (
-    <section class="lancamentos">
+    <section id="lancamentos">
       <h2>APROVEITE OS LANÇAMENTOS</h2>
-      <div class="lancamentos-div">
-        <figure class="produtos">
+      <div className="lancamentos-div">
+        <figure className="produtos">
           <img src={gloss1} alt="2 Batons Liquido" />
           <img src={gloss2} alt="3 Batons Liquido" />
           <img src={batom3} alt="3 Batons" />
         </figure>
 
-        <div class="produto-detalhes">
-          <figure class="produto-destaque">
+        <div className="produto-detalhes">
+          <figure className="produto-destaque">
             {/* A imagem exibida será sempre a do estado "cor" */}
             <img src={cor} alt="Mulher mostrando Batom" />
           </figure>
 
-          <div class="card">
+          <div className="card">
             <img src={stars} alt="5 Estrelas" />
             <h3>Matte Premium</h3>
             <p id="subtitulo">Cores disponíveis</p>

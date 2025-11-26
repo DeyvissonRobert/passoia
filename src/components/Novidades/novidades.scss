@@ -1,6 +1,6 @@
 @use "../../Global.scss" as *;
 
-.novidades {
+#novidades {
     text-align: center;
     border-bottom: 2px solid rgb(241, 241, 241);
     position: relative;
@@ -20,7 +20,7 @@
 
     @media (max-width: 768px) {
 
-        .novidades {
+        #novidades {
 
             h2 {
                 margin: 1.5rem 0 1rem;

@@ -1,6 +1,6 @@
 @use "../../Global.scss" as *;
 
-.lancamentos {
+#lancamentos {
     font-family: $roboto;
 
     h2 {
@@ -115,7 +115,7 @@
 }
 
 @media (max-width: 768px) {
-    .lancamentos {
+    #lancamentos {
         h2  {
             margin: 2rem 0 0.5rem;
         }
