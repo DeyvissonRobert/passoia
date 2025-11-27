@@ -64,7 +64,7 @@
                     margin: 0 1rem 1rem 0;
                     cursor: grab;
                     border: 2px solid #fff;
-                    box-shadow: 0 0 0 2px #D8D8D8;
+                    box-shadow: 0 0 0 2px $shadow;
 
                     &:hover {
                         transform: scale(1.1);
@@ -163,7 +163,7 @@
                         width: 2.5rem;
                         height: 2.5rem;
                         border: 1px solid #fff;
-                        box-shadow: 0 0 0 2px #D8D8D8;
+                        box-shadow: 0 0 0 2px $shadow;
 
                     &:hover {
                         box-shadow: 0 0 0 2px $color-hover;
