@@ -30,6 +30,7 @@ body {
 .links a {
   cursor: grab;
   transition: color 0.3s ease;
+  color: $text-color;
 
   &:hover {
     color: $color-hover;

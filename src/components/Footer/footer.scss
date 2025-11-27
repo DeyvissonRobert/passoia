@@ -2,9 +2,9 @@
 
 
 .footer {
+    font-family: $roboto;
     display: flex;
     justify-content: space-around;
-    width: 100%;
     gap: 9.5;
     margin: 2rem;
 
@@ -12,32 +12,33 @@
         font-weight: 700;
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        color: $text-color;
     }
 
     .service {
         width: 13.3rem;
-        
+
         a {
             line-height: 2rem;
             display: block;
-            
+
             &:hover {
-                  text-decoration: underline 2px;
-                transform: scale(1.01); 
-            } 
+                text-decoration: underline 2px;
+                transform: scale(1.01);
+            }
         }
 
     }
-    
+
     .payment-methods {
         width: 18.3rem;
-        
+
         .imagens {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
             align-items: center;
             width: 14rem;
-            
+
             img {
                 width: 4rem;
             }
@@ -50,7 +51,7 @@
         .redes {
             display: flex;
             gap: 0.8rem;
-            
+
             img {
                 width: 2.5rem;
                 height: 2.5rem;
@@ -60,6 +61,34 @@
                 &:active {
                     cursor: grabbing;
                 }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 1rem 2rem;
+
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .payment-methods {
+
+            .imagens {
+                grid-template-columns: repeat(4, 1fr);
+                width: 100%;
+                gap: 0.5rem;
             }
         }
 
