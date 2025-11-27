@@ -17,6 +17,10 @@ $roboto: 'Roboto', sans-serif;
   // font-family: $roboto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $cor-fundo;
   max-width: 2000px;
