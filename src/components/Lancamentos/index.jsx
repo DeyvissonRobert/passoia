@@ -13,7 +13,7 @@ import stars from "../../assets/stars.png";
 
 function Lancamentos() {
   // Estado que guarda a cor (imagem) atual
-  // O valor inicial é a imagem "vermelho"
+  // O valor inicial é a imagem "marrom"
   const [cor, setCor] = useState(marrom);
 
   return (
