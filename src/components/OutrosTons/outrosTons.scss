@@ -13,7 +13,6 @@
         padding: 0 5%;
         justify-content: center;
         margin-bottom: 4.8rem;
-        // flex-direction: column;
 
         .outros-produtos {
             display: flex;
@@ -93,7 +92,7 @@
                 width: 29rem;
                 height: 100%;
                 padding: 1rem;
-                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 
                 img {
                     width: 6.8rem;
@@ -134,19 +133,19 @@
                 }
 
                 #cor1 {
-                    background-color: #73282D;
+                    background-color: #DD5C86;
                 }
 
                 #cor2 {
-                    background-color: #E1342A;
+                    background-color: #B42B3C;
                 }
 
                 #cor3 {
-                    background-color:  #B1B0D8;
+                    background-color:  #906276;
                 }
 
                 #cor4 {
-                    background-color: #DE755E;
+                    background-color: #48312E;
                 }
 
 
@@ -169,36 +168,48 @@
 }
 
 @media (max-width: 768px) {
-    #lancamentos {
+.outros-tons {
         h2  {
             margin: 2rem 0 0.5rem;
         }
         
-        .lancamentos-div {
-            margin-bottom: 1.5rem;
+        .outros-tons-div {
+            margin-bottom: 1rem;
 
-         .produtos {
+         .outros-produtos {
              display: none;
-             }
+            //   button {
+            //   width: 4rem;
+            //   height: 4rem;
+            //  }
+        }
 
             .produto-detalhes {
                 flex-direction: column;
                 margin-left: 0;
                 gap: 0.5rem;
+                
+                .destaque-batom {
+                    width: 10rem;
+                    height: 10rem;
 
-                .produto-destaque {
                     img {
-                        width: 10rem;
+                        width: 6rem;
                     }
                 }
 
-                .card {
+            #coracao {
+                bottom: 10rem;
+                left: 3.7rem;
+                transform: scale(1.2);
+            }
+
+                .card-batom {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     width: 100%;
                     padding: 0.8rem;
-
 
                     img {
                         width: 6rem;
@@ -221,7 +232,7 @@
 
                     &:hover {
                         box-shadow: 0 0 0 2px $color-hover;
-                    }
+                        }
                     }
 
                     #cor4 {

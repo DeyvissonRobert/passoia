@@ -52,18 +52,12 @@ function OutrosTons() {
           <p id="subtitulo">Cores disponíveis</p>
 
           {/* Cada botão altera o estado "cor", trocando a imagem exibida */}
-          <button id="cor1" onClick={() => setCor(btmRosa)}>
-            ㅤ
-          </button>
-          <button id="cor2" onClick={() => setCor(btmVermelho)}>
-            ㅤ
-          </button>
-          <button id="cor3" onClick={() => setCor(btmLilas)}>
-            ㅤ
-          </button>
-          <button id="cor4" onClick={() => setCor(btmMarrom)}>
-            ㅤ
-          </button>
+          <div class="botoes-cores">
+            <button id="cor1" onClick={() => setCor(btmRosa)}>ㅤ</button>
+            <button id="cor2" onClick={() => setCor(btmVermelho)}>ㅤ</button>
+            <button id="cor3" onClick={() => setCor(btmLilas)}>ㅤ</button>
+            <button id="cor4" onClick={() => setCor(btmMarrom)}>ㅤ</button>
+          </div>
 
           <h4>Descrição</h4>
           <p>
